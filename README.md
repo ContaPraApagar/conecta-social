@@ -65,6 +65,11 @@ A pasta contém a versão final do código-fonte. Para publicação, ela pode se
 enviada para um repositório GitHub e conectada a uma plataforma de hospedagem
 de sites estáticos.
 
+## Acessibilidade
+
+O projeto foi desenvolvido considerando navegação por teclado,
+estrutura semântica e recursos de acessibilidade.
+
 ## Autor
 
 Projeto desenvolvido para fins acadêmicos por Nicolas.
