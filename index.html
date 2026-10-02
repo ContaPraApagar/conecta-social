@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto social de uma ONG para apoiar ações de inclusão e transformação social.">
+  <title>Conecta Social | ONG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="#inicio" aria-label="Conecta Social - página inicial">Conecta Social</a>
+
+      <button class="menu-button" id="menuButton" type="button"
+              aria-expanded="false" aria-controls="menuPrincipal">
+        Menu
+      </button>
+
+      <nav id="menuPrincipal" class="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#acoes">Ações</a>
+        <a href="#contato">Contato</a>
+        <button id="themeButton" class="theme-button" type="button"
+                aria-pressed="false">Modo escuro</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero" aria-labelledby="titulo-principal">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Tecnologia para transformar</p>
+          <h1 id="titulo-principal">Conectando pessoas a oportunidades.</h1>
+          <p class="hero-text">
+            A Conecta Social apoia iniciativas de inclusão, educação e acesso à tecnologia
+            para ajudar a construir uma sociedade mais participativa.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#acoes">Conheça nossas ações</a>
+            <a class="button secondary" href="#contato">Quero participar</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Resumo do projeto">
+          <strong>Nosso foco</strong>
+          <span>Inclusão digital</span>
+          <span>Educação</span>
+          <span>Participação social</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <p class="eyebrow">Sobre o projeto</p>
+        <h2 id="sobre-titulo">Uma iniciativa simples e acessível</h2>
+        <p>
+          O projeto foi criado como uma proposta de presença digital para uma organização
+          do terceiro setor. A interface prioriza clareza, acessibilidade, navegação por
+          teclado e adaptação para diferentes tamanhos de tela.
+        </p>
+      </div>
+    </section>
+
+    <section id="acoes" class="section section-alt" aria-labelledby="acoes-titulo">
+      <div class="container">
+        <p class="eyebrow">O que fazemos</p>
+        <h2 id="acoes-titulo">Nossas ações</h2>
+
+        <div class="cards">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">01</span>
+            <h3>Inclusão digital</h3>
+            <p>Incentivo ao acesso e ao aprendizado de ferramentas digitais.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">02</span>
+            <h3>Educação</h3>
+            <p>Conteúdos e atividades para apoiar o desenvolvimento de estudantes.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">03</span>
+            <h3>Voluntariado</h3>
+            <p>Conexão entre pessoas interessadas em contribuir com projetos sociais.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="acessibilidade-titulo">
+      <div class="container accessibility-box">
+        <div>
+          <p class="eyebrow">Acessibilidade</p>
+          <h2 id="acessibilidade-titulo">Feito para mais pessoas</h2>
+          <p>
+            O site utiliza HTML semântico, contraste adequado, foco visível,
+            textos alternativos quando necessários e suporte à navegação por teclado.
+          </p>
+        </div>
+        <ul>
+          <li>Navegação por teclado</li>
+          <li>Foco visual nos elementos</li>
+          <li>Modo escuro</li>
+          <li>Estrutura compatível com leitores de tela</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-alt" aria-labelledby="contato-titulo">
+      <div class="container">
+        <p class="eyebrow">Contato</p>
+        <h2 id="contato-titulo">Faça parte</h2>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+
+          <button class="button primary" type="submit">Enviar mensagem</button>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Conecta Social. Projeto acadêmico.</p>
+      <a href="#inicio">Voltar ao início</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
